@@ -4,8 +4,10 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 export default function ButtonGitHub()
 {
     return (
-        <button id="github" class="rounded-md font-bold hover:bg-neutral-800" style={{width:"40px", height:"40px"}}>
-            <FontAwesomeIcon icon={faGithub}/>
-        </button>
+        <div class="w-9 h-10 rounded-md hover:bg-neutral-800 transition ease-in-out hover:scale-105 duration-200">
+            <a class="flex w-9 h-10 justify-center items-center" href="https://www.github.com/ignaciordgz" rel="noreferrer" target="_blank"> 
+                <FontAwesomeIcon class="w-6 h-6" id="githubicon" icon={faGithub}/>
+            </a>
+        </div>
     )
 }
