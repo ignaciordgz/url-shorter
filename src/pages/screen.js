@@ -1,4 +1,3 @@
-import { Grid, useScrollTrigger } from "@mui/material";
 import InputLink from "../components/inputLink/inputLink";
 import ButtonEnter from "../components/buttonEnter/buttonEnter";
 import Navbar from "../components/navbar/navbar";
