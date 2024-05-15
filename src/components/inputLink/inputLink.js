@@ -1,6 +1,6 @@
-import { useState } from "react"
+import { forwardRef, useState } from "react"
 
-export default function InputLink({ref})
+export const InputLink = forwardRef((props, ref) =>
 {
     const [value, setValue] = useState("")
 
@@ -15,4 +15,6 @@ export default function InputLink({ref})
                 <input class="relative bg-black rounded-lg font-bold" ref={ref} type="text" id="link" onInput={takeChangeInput} value={value} placeholder="link" style={{width:"54.5rem", height:"2.5rem", fontSize:"20px"}}/>
         </div>
     )
-}
+})
+
+export default InputLink
