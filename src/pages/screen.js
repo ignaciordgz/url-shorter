@@ -12,10 +12,12 @@ export default function Screen()
 
     const [shortUrl, setUrl] = useState("")
 
-    const handleSubmit = (e) => 
+    const handleSubmit = async (e) => 
     {
         e.preventDefault()
         const url = inputRef.current.value
+
+        setUrl((await axiosGetShortUrl()).data)
     }
 
     return(
