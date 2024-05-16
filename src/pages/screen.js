@@ -5,6 +5,7 @@ import ButtonRefresh from "../components/buttonRefresh/buttonRefresh";
 import Output from "../components/output/output";
 import { useRef, useState } from "react";
 import { axiosGetShortUrl } from "../service/serviceCalls"
+import ButtonCopy from "../components/buttonCopy/buttonCopy";
 
 export default function Screen()
 {
@@ -26,6 +27,7 @@ export default function Screen()
                 <InputLink ref={inputRef}></InputLink>
                 <ButtonEnter></ButtonEnter>
                 <Output shortUrl={shortUrl}></Output>
+                <ButtonCopy></ButtonCopy>
             </form>
         </div>
     )
