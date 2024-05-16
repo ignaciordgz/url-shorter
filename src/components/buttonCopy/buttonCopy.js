@@ -3,9 +3,16 @@ import { faCopy } from '@fortawesome/free-solid-svg-icons';
 
 export default function ButtonCopy()
 {
+    function Copy()
+    {
+        var copiedText = document.getElementById("outLink")
+
+        navigator.clipboard.writeText(copiedText.value)
+    }
+
     return (
         <div className="relative w-9 h-10 rounded-md hover:scale-105 hover:bg-neutral-800 transition ease-in-out duration-200">
-            <a className="cursor-pointer flex w-9 h-10 justify-center items-center">
+            <a className="cursor-pointer flex w-9 h-10 justify-center items-center" onClick={Copy}>
                 <FontAwesomeIcon className="w-6 h-6" id="buttonCopy" icon={faCopy}/>
             </a>
         </div>
