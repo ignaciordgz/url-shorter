@@ -22,7 +22,7 @@ export default function Screen()
     }
 
     return(
-        <div>
+        <div className="space-y-6">
             <form className='space-y-10' onSubmit={handleSubmit}>
                 <InputLink ref={inputRef}></InputLink>
                 <ButtonEnter></ButtonEnter>
