@@ -26,11 +26,11 @@ export default function Screen()
             <form className='space-y-10' onSubmit={handleSubmit}>
                 <InputLink ref={inputRef}></InputLink>
                 <ButtonEnter></ButtonEnter>
-                <div className="flex pl-52 justify-evenly items-center">
+            </form>
+            <div className="flex pl-52 justify-evenly items-center">
                     <Output shortUrl={shortUrl}></Output>
                     <ButtonCopy></ButtonCopy>
-                </div>
-            </form>
+            </div>
         </div>
     )
 }
