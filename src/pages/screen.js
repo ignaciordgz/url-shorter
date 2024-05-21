@@ -4,7 +4,7 @@ import Navbar from "../components/navbar/navbar";
 import ButtonRefresh from "../components/buttonRefresh/buttonRefresh";
 import Output from "../components/output/output";
 import { useRef, useState } from "react";
-import { axiosGetShortUrl } from "../service/serviceCalls"
+import { axiosGetShortUrl, axiosPostStoreUrl } from "../service/serviceCalls"
 import ButtonCopy from "../components/buttonCopy/buttonCopy";
 
 export default function Screen()
@@ -18,7 +18,7 @@ export default function Screen()
         e.preventDefault()
         const url = inputRef.current.value
 
-        setUrl((await axiosGetShortUrl()).data)
+        axiosPostStoreUrl(url);
     }
 
     return(
