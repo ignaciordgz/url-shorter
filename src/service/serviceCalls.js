@@ -9,5 +9,5 @@ export const axiosGetShortUrl = () =>
 
 export const axiosPostStoreUrl = ( originalUrl ) => 
 {
-    return axios.post(BASE_URL + "/storeURL")
+    return axios.post(BASE_URL + "/storeURL", originalUrl)
 }
