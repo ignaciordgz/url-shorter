@@ -43,6 +43,7 @@ export default function Screen()
             <div className="flex pl-52 justify-evenly items-center">
                     <Output shortUrl={shortUrl}></Output>
                     <ButtonCopy></ButtonCopy>
+                    <ButtonRefresh></ButtonRefresh>
             </div>
         </div>
     )
