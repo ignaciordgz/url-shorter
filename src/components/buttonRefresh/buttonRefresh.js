@@ -7,17 +7,18 @@ export default function ButtonRefresh()
     const [ hovered, setHovered ] = useState(false)
 
     return(
-        <div class="items-center justify-center">
+        <div class="w-9 h-10">
             <button 
                 id="refresh" 
-                class="rounded-md pt-1 pl-2 pr-2 pb-1 hover:bg-neutral-800 opacity-40 hover:opacity-100 transition ease-in-out duration-200 hover:scale-105 hover:transition hover:second:rotate-45"
+                class="flex items-center justify-center rounded-md w-9 h-10 hover:bg-neutral-800 opacity-40 hover:opacity-100 transition ease-in-out duration-200 hover:scale-105"
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}
+                title='Click to Refresh Input'
             >
                 <FontAwesomeIcon 
                     icon={faArrowsRotate} 
                     color='white'
-                    className={hovered ? "rotate-180 transition duration-500 ease-in-out" : ""}/>
+                    className={hovered ? "rotate-180 transition duration-500 ease-in-out w-6 h-6" : "w-6 h-6"}/>
             </button>
         </div>
     )
