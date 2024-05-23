@@ -12,6 +12,13 @@ export default function Screen()
 
     const [shortUrl, setUrl] = useState("")
 
+    const [inputValue, setValue] = useState("")
+
+    const takeChangeInput = (e) => 
+    {
+        setValue(e.target.value)
+    }
+
     const handleSubmit = async (e) => 
     {
         e.preventDefault()
@@ -35,14 +42,18 @@ export default function Screen()
 
     const Refresh = () =>
     {
-        inputRef.current.value = ""
+        setValue("")
         setUrl("")
+        if (inputRef.current)
+        {
+            inputRef.current.value = ""
+        }
     }
 
     return(
         <div className="space-y-6">
             <form className='space-y-10' onSubmit={handleSubmit}>
-                <InputLink ref={inputRef}></InputLink>
+                <InputLink takeChangeInput={takeChangeInput} value={inputValue} ref={inputRef}></InputLink>
                 <ButtonEnter></ButtonEnter>
             </form>
             <div className="flex justify-evenly pl-60 items-center">

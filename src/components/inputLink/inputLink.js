@@ -1,13 +1,7 @@
-import { forwardRef, useState } from "react"
+import { forwardRef } from "react"
 
-export const InputLink = forwardRef((props, ref) =>
+export const InputLink = forwardRef(({value, takeChangeInput}, ref) =>
 {
-    const [value, setValue] = useState("")
-
-    const takeChangeInput = (e) => 
-    {
-        setValue(e.target.value)
-    }
 
     return(
         <div class="relative">
