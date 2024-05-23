@@ -1,6 +1,5 @@
 import InputLink from "../components/inputLink/inputLink";
 import ButtonEnter from "../components/buttonEnter/buttonEnter";
-import Navbar from "../components/navbar/navbar";
 import ButtonRefresh from "../components/buttonRefresh/buttonRefresh";
 import Output from "../components/output/output";
 import { useRef, useState } from "react";
@@ -36,9 +35,8 @@ export default function Screen()
 
     const Refresh = () =>
     {
+        inputRef.current.value = ""
         setUrl("")
-
-        document.getElementById("link").value = ""
     }
 
     return(
