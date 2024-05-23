@@ -34,16 +34,25 @@ export default function Screen()
         });
     }
 
+    const Refresh = () =>
+    {
+        setUrl("")
+
+        document.getElementById("link").value = ""
+    }
+
     return(
         <div className="space-y-6">
             <form className='space-y-10' onSubmit={handleSubmit}>
                 <InputLink ref={inputRef}></InputLink>
                 <ButtonEnter></ButtonEnter>
             </form>
-            <div className="flex pl-52 justify-evenly items-center">
+            <div className="flex justify-evenly pl-60 items-center">
                     <Output shortUrl={shortUrl}></Output>
-                    <ButtonCopy></ButtonCopy>
-                    <ButtonRefresh></ButtonRefresh>
+                    <div className="flex space-x-4">
+                        <ButtonCopy></ButtonCopy>
+                        <ButtonRefresh onRefresh={Refresh}></ButtonRefresh>
+                    </div>
             </div>
         </div>
     )
