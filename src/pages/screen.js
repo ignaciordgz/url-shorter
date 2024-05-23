@@ -40,10 +40,12 @@ export default function Screen()
                 <InputLink ref={inputRef}></InputLink>
                 <ButtonEnter></ButtonEnter>
             </form>
-            <div className="flex pl-52 justify-evenly items-center">
+            <div className="flex justify-evenly pl-60 items-center">
                     <Output shortUrl={shortUrl}></Output>
-                    <ButtonCopy></ButtonCopy>
-                    <ButtonRefresh></ButtonRefresh>
+                    <div className="flex space-x-4">
+                        <ButtonCopy></ButtonCopy>
+                        <ButtonRefresh></ButtonRefresh>
+                    </div>
             </div>
         </div>
     )
