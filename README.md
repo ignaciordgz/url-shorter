@@ -7,12 +7,28 @@
 ## Installation
 
 ### Requirements
-[Node.js](https://nodejs.org/en)
-[VSCode](https://code.visualstudio.com/download)
+- [Node.js](https://nodejs.org/en)
+- [VSCode](https://code.visualstudio.com/download)
 
 ### Clone the repository
-git clone https://github.com/ignaciordgz/url-shorter.git
+
+<code class="python">
+    git clone https://github.com/ignaciordgz/url-shorter.git
+</code>
 
 ### Installing dependencies
 
-npm install or yarn install
+<code class="python">
+    npm install
+</code>
+or
+<code class="python">
+    yarn install
+</code>
+
+## Run
+
+In the terminal write
+<code class="python">
+    npm run
+</code>
