@@ -12,9 +12,7 @@
 
 ### Clone the repository
 
-<code class="python">
 git clone https://github.com/ignaciordgz/url-shorter.git
-</code>
 
 ### Installing dependencies
 
