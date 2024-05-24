@@ -13,22 +13,22 @@
 ### Clone the repository
 
 <code class="python">
-    git clone https://github.com/ignaciordgz/url-shorter.git
+git clone https://github.com/ignaciordgz/url-shorter.git
 </code>
 
 ### Installing dependencies
 
-<code class="python">
+<pre><code class="python">
     npm install
-</code>
+</code></pre>
 or
-<code class="python">
+<pre><code class="python">
     yarn install
-</code>
+</code></pre>
 
 ## Run
 
 In the terminal write
-<code class="python">
+<pre><code class="python">
     npm run
-</code>
+</code></pre>
