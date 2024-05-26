@@ -7,7 +7,7 @@ export default function ButtonCopy()
     {
         var copiedText = document.getElementById("outLink")
 
-        navigator.clipboard.writeText("localhost:8080/api/"+copiedText.value)
+        navigator.clipboard.writeText("https://url-shorter-apirest.onrender.com/api/"+copiedText.value)
     }
 
     return (
