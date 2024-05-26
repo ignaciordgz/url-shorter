@@ -36,7 +36,7 @@ export default function Screen()
         })
         .catch(error => 
         {
-            console.error("Error", error)
+            console.error("Error, inserte un link valido", error)
         });
     }
 
