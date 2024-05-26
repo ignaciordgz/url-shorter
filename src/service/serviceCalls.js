@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const BASE_URL = "http://localhost:8080/api"
+const BASE_URL = "https://url-shorter-apirest.onrender.com/api"
 
 export const axiosPostStoreUrl = ( {originalURL} ) => 
 {
