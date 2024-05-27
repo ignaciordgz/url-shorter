@@ -1,8 +1,8 @@
-export default function Output({shortUrl})
+export default function Output({shortUrl, originalURL})
 {
     return (
         <div className="relative">
-            <output className="w-10 h-10 relative font-bold font-poppins rounded-lg" id="outLink">{shortUrl}</output>
+            <a className="w-10 h-10 relative opacity-45 transition hover:opacity-90 font-bold font-poppins rounded-lg" rel="noreferrer" target="_blank" href={originalURL} id="outLink">{shortUrl}</a>
         </div>
     )
 }

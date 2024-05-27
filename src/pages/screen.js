@@ -12,6 +12,8 @@ export default function Screen()
 
     const [shortUrl, setUrl] = useState("")
 
+    const [originalUrl, setOriginalUrl] = useState("")
+
     const [inputValue, setValue] = useState("")
 
     const takeChangeInput = (e) => 
@@ -23,6 +25,7 @@ export default function Screen()
     {
         e.preventDefault()
         const url = inputRef.current.value
+        setOriginalUrl(url)
 
         var urlDto = 
         {
@@ -57,9 +60,9 @@ export default function Screen()
                 <ButtonEnter></ButtonEnter>
             </form>
             <div className="flex justify-evenly pl-60 items-center">
-                    <Output shortUrl={shortUrl}></Output>
+                    <Output originalURL={originalUrl} shortUrl={shortUrl}></Output>
                     <div className="flex space-x-4">
-                        <ButtonCopy></ButtonCopy>
+                        <ButtonCopy shortUrl={shortUrl}></ButtonCopy>
                         <ButtonRefresh onRefresh={Refresh}></ButtonRefresh>
                     </div>
             </div>
