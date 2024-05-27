@@ -5,7 +5,7 @@
 - [PostgreSQL](https://www.postgresql.org/) Database used in Spring Boot.
 
 ##
-![PREVIEW](/public/page.png/)
+[![PREVIEW](/public/page.png)](https://url-shorter-rouge.vercel.app/)
 
 ## ☁️ Web App
 [url-shorter-rouge.vercel.app](https://url-shorter-rouge.vercel.app/)
