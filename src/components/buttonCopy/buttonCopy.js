@@ -1,13 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopy } from '@fortawesome/free-solid-svg-icons'; 
 
-export default function ButtonCopy()
+export default function ButtonCopy({shortUrl})
 {
     function Copy()
     {
-        var copiedText = document.getElementById("outLink")
-
-        navigator.clipboard.writeText("https://url-shorter-apirest.onrender.com/api/"+copiedText.value)
+        navigator.clipboard.writeText("https://url-shorter-apirest.onrender.com/api/"+shortUrl)
     }
 
     return (
