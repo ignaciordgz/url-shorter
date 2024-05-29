@@ -17,6 +17,107 @@
   }
 }
 
+body
+{
+  background: #000;
+}
+
+@media screen and (max-width: 200px) {
+  #navbar :first-child{
+    float: none;
+    width: 100%;
+  }
+}
+
+#link
+{
+  width: 54.5rem;
+}
+
+@media screen and (max-width: 882px) {
+  #link {
+    width: 45rem;
+  }
+}
+
+@media screen and (max-width: 724px) {
+  #link
+  {
+    width: 40rem;
+  }
+}
+
+@media screen and (max-width: 644px) {
+  #link
+  {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #link
+  {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 332px) {
+  #link
+  {
+    width: 10rem;
+  }
+}
+
+@media screen and (max-width: 332px) {
+  #divOut
+  {
+    padding-left: 0rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (max-height: 305px) {
+  #divIn
+  {
+    padding-bottom: 7rem;
+  }
+}
+
+@media screen and (max-height: 305px) {
+  #divIn
+  {
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 164px) {
+  #link
+  {
+    width: 8rem;
+  }
+}
+
+@media screen and (max-width: 132px) {
+  #link
+  {
+    width: 5rem;
+  }
+}
+
+@media screen and (max-width: 132px) {
+  #divIn
+  {
+    width: 5rem;
+  }
+}
+
+@media screen and (max-width: 132px) {
+  #getlink
+  {
+    width: 5rem;
+  }
+}
+
 .App-header {
   background-color: #000000;
   min-height: 100vh;

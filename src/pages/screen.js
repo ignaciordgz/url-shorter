@@ -54,14 +54,14 @@ export default function Screen()
     }
 
     return(
-        <div className="space-y-6">
+        <div id="divIn" className="space-y-6">
             <form className='space-y-10' onSubmit={handleSubmit}>
                 <InputLink takeChangeInput={takeChangeInput} value={inputValue} ref={inputRef}></InputLink>
                 <ButtonEnter></ButtonEnter>
             </form>
-            <div className="flex justify-evenly pl-60 items-center">
+            <div id="divOut" className="relative flex justify-evenly pl-60 items-center">
                     <Output originalURL={originalUrl} shortUrl={shortUrl}></Output>
-                    <div className="flex space-x-4">
+                    <div className="relative flex space-x-4">
                         <ButtonCopy shortUrl={shortUrl}></ButtonCopy>
                         <ButtonRefresh onRefresh={Refresh}></ButtonRefresh>
                     </div>

@@ -7,7 +7,7 @@ export default function ButtonRefresh({onRefresh})
     const [ hovered, setHovered ] = useState(false)
 
     return(
-        <div class="w-9 h-10">
+        <div class="relative w-9 h-10">
             <button 
                 id="refresh" 
                 class="flex items-center justify-center rounded-md w-9 h-10 hover:bg-neutral-800 opacity-40 hover:opacity-100 transition ease-in-out duration-200 hover:scale-105"
