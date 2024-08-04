@@ -2,7 +2,6 @@ import { forwardRef } from "react"
 
 export const InputLink = forwardRef(({value, takeChangeInput}, ref) =>
 {
-
     return(
         <div class="relative">
             <div class="absolute -inset-0.5 bg-gradient-to-r from-neutral-600 to-slate-600 rounded-lg blur-md opacity-90"></div>
